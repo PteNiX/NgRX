@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { Component1Component } from './components/component1/component1.component';
 import { Component2Component } from './components/component2/component2.component';
 import { Component3Component } from './components/component3/component3.component';
+import { StoreModule } from '@ngrx/store';
+
+import { exampleReducer } from './store/example.reducer';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,8 @@ import { Component3Component } from './components/component3/component3.componen
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    StoreModule.forRoot({count: exampleReducer}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]
