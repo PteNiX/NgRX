@@ -7,7 +7,6 @@ import { Component1Component } from './components/component1/component1.componen
 import { Component2Component } from './components/component2/component2.component';
 import { Component3Component } from './components/component3/component3.component';
 import { StoreModule } from '@ngrx/store';
-
 import { exampleReducer } from './store/example.reducer';
 
 @NgModule({
