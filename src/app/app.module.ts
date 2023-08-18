@@ -7,13 +7,15 @@ import { Component2Component } from './components/component2/component2.componen
 import { Component3Component } from './components/component3/component3.component';
 import { StoreModule } from '@ngrx/store';
 import { exampleReducer } from './store/example.reducer';
+import { Component4Component } from './components/component4/component4.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Component1Component,
     Component2Component,
-    Component3Component
+    Component3Component,
+    Component4Component
   ],
   imports: [
     BrowserModule,
